@@ -24,7 +24,10 @@ def main():
         # Toggle LED if current temperature exceed threshold temp
         led_controller(state=(temperature >= record_temp))
 
-        temperature_record = {"timestamp": get_timestamp(time.localtime()), "temperature": temperature}
+        temperature_record = {
+            "timestamp": get_timestamp(time.localtime()),
+            "temperature": temperature,
+        }
 
         # Print temperature record to the terminal
         print(f"Temperature record: {temperature_record}")
