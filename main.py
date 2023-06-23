@@ -11,7 +11,7 @@ conversion_factor = 3.3 / 65535
 
 
 def main():
-    # Get user input of the threshold temp
+    # Get user input for the threshold temp
     try:
         record_temp = float(input("What temperature do you want to monitor? "))
     except ValueError:
