@@ -11,7 +11,7 @@ conversion_factor = 3.3 / 65535
 
 
 def main():
-    # Get user input of the threshold temp
+    # Get user input for the threshold temp
     try:
         record_temp = float(input("What temperature do you want to monitor? "))
     except ValueError:
@@ -24,7 +24,10 @@ def main():
         # Toggle LED if current temperature exceed threshold temp
         led_controller(state=(temperature >= record_temp))
 
-        temperature_record = {"timestamp": get_timestamp(time.localtime()), "temperature": temperature}
+        temperature_record = {
+            "timestamp": get_timestamp(time.localtime()),
+            "temperature": temperature,
+        }
 
         # Print temperature record to the terminal
         print(f"Temperature record: {temperature_record}")
