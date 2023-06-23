@@ -1,2 +1,2 @@
 # PyTemp
- Boiler plate micropython project using Raspberry Pi Pico sensors
+ Boilerplate micropython project using Raspberry Pi Pico sensors
